@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  border-radius: 3px;
+  background-color: #666;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  border-radius: 3px;
+  background-color: #666;
+}

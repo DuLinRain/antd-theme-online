@@ -1,0 +1,75 @@
+@import '~antd/dist/antd.css';
+.App {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+}
+.header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-bottom: 1px solid #e8e8e8;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.container > .sider {  
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  transition: margin-left 0.5s; 
+}
+.container .sider.expand {
+  margin-left: 0; 
+}
+.container .sider.collapse {
+  margin-left: -186px;
+}
+.sider > .expander-arrow-wrapper {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: calc(50% - 70px);
+  right: 0px;
+}
+.expander-arrow-wrapper > .expander-arrow {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.expander-arrow:hover {
+  transform: scale(1.4);
+}
+.container > .content {
+  padding: 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
